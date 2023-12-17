@@ -1,0 +1,41 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: xxljob-service
+
+
+xxl:
+  job:
+    admin:
+      addresses: http://192.168.74.136:9007/xxl-job-admin
+    accessToken: default_token
+    executor:
+      appname: xxl-study-executor
+      port: 9912
+      ip: 192.168.31.64
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 30
+
+#### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+#  xxl.job.admin.addresses=http://127.0.0.1:8080/xxl-job-admin
+#
+#  ### xxl-job, access token
+#  xxl.job.accessToken=default_token
+#
+#  ### xxl-job executor appname
+#  xxl.job.executor.appname=xxl-job-executor-sample
+#  ### xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
+#  xxl.job.executor.address=
+#  ### xxl-job executor server-info
+#  xxl.job.executor.ip=
+#  xxl.job.executor.port=9999
+#  ### xxl-job executor log-path
+#  xxl.job.executor.logpath=/data/applogs/xxl-job/jobhandler
+#  ### xxl-job executor log-retention-days
+#  xxl.job.executor.logretentiondays=30
+
+
+
+
